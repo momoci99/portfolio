@@ -10,3 +10,13 @@ export const Roboto_400 = Roboto({
   weight: "400",
   subsets: ["latin"],
 });
+
+export const Roboto_500 = Roboto({
+  weight: "500",
+  subsets: ["latin"],
+});
+
+export const Roboto_700 = Roboto({
+  weight: "700",
+  subsets: ["latin"],
+});

@@ -1,11 +1,19 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import Main from "@/components/Main";
+
 export default function Page() {
   return (
-    <main className="">
+    <main
+      className=""
+      style={{
+        height: "100vh",
+        width: "100vw",
+      }}
+    >
       <Header />
-      <h1 className="text-4xl font-bold">Hello World</h1>
+      <Main></Main>
     </main>
   );
 }

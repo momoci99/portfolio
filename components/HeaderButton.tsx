@@ -18,7 +18,7 @@ const HeaderButton = ({ text }: { text: string }) => {
   return (
     <HeaderButtonWrapper>
       <a>{text}</a>
-      <Image src="/arrow-down.svg" width={8} height={10} alt="arrow"></Image>
+      <Image src="/arrow-down.svg" width={8} height={8} alt="arrow"></Image>
     </HeaderButtonWrapper>
   );
 };

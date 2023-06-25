@@ -1,9 +1,8 @@
 "use client";
 
 import { Roboto_400, Roboto_700 } from "@/app/fonts";
-
 import style from "styled-components";
-import Image from "next/image";
+import HeaderButton from "./HeaderButton";
 
 const HeaderWrapper = style.header`
   background-color: rgb(17, 17, 17);
@@ -20,27 +19,6 @@ const HeaderWrapper = style.header`
     gap: 40px;
   }
 `;
-
-const HeaderButton = ({ text }: { text: string }) => {
-  const HeaderButtonWrapper = style.button`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    > a {
-      padding-right: 5px;
-    }
-
-
-  `;
-
-  return (
-    <HeaderButtonWrapper>
-      <a>{text}</a>
-      <Image src="/arrow-down.svg" width={8} height={10} alt="arrow"></Image>
-    </HeaderButtonWrapper>
-  );
-};
 
 const Header = () => {
   return (

@@ -29,10 +29,7 @@ const MainWrapper = styled.main`
   }
 
   height: 800px;
-  width: 100%;
-
   text-align: center;
-
   background-color: #61b2fb;
 `;
 

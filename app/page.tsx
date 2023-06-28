@@ -2,18 +2,19 @@ import Image from "next/image";
 import Header from "@/components/Header";
 
 import Main from "@/components/Main";
+import Skills from "@/components/Skills";
 
 export default function Page() {
   return (
-    <main
+    <div
       className=""
       style={{
-        height: "100vh",
         width: "100vw",
       }}
     >
       <Header />
       <Main></Main>
-    </main>
+      <Skills></Skills>
+    </div>
   );
 }

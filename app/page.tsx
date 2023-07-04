@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Main from "@/components/Main";
 import Skills from "@/components/Skills";
 
+import Projects from "@/components/Projects";
+
 export default function Page() {
   return (
     <div
@@ -15,6 +17,7 @@ export default function Page() {
       <Header />
       <Main></Main>
       <Skills></Skills>
+      <Projects></Projects>
     </div>
   );
 }

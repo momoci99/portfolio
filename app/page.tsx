@@ -5,6 +5,7 @@ import Main from "@/components/Main";
 import Skills from "@/components/Skills";
 
 import Projects from "@/components/Projects";
+import AboutMe from "@/components/AboutMe";
 
 export default function Page() {
   return (
@@ -18,6 +19,7 @@ export default function Page() {
       <Main></Main>
       <Skills></Skills>
       <Projects></Projects>
+      <AboutMe></AboutMe>
     </div>
   );
 }

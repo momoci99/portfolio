@@ -88,7 +88,7 @@ const MyExperienceArticle = styled.article`
 
     .line {
       width: 1px;
-      margin-top: 10px;
+      margin-top: 15px;
       height: 100%;
       background-color: white;
     }

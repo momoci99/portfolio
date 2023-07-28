@@ -10,6 +10,8 @@ import {
 } from "@/app/fonts";
 import styled from "styled-components";
 
+import { Element } from "react-scroll";
+
 const MainWrapper = styled.main`
   display: flex;
   flex-direction: column;
@@ -35,17 +37,19 @@ const MainWrapper = styled.main`
 
 const Main = () => {
   return (
-    <MainWrapper>
-      <h1 className={Noto_Sans_KR_700.className}>
-        안녕하세요 👋 프론트엔드 개발자 <br></br> 🧑🏻‍💻 모영권 입니다.
-      </h1>
+    <Element name="Home">
+      <MainWrapper>
+        <h1 className={Noto_Sans_KR_700.className}>
+          안녕하세요 👋 프론트엔드 개발자 <br></br> 🧑🏻‍💻 모영권 입니다.
+        </h1>
 
-      <p className={Noto_Sans_KR_300.className}>
-        저는 웹 프론트엔드 개발을 좋아하며, 웹 어플리케이션 개발에 대한 열정으로
-        일하고 있습니다. <br></br> 혹시 저에 대해 궁금하시면 ⬇️ 스크롤을 내려
-        확인해주세요.
-      </p>
-    </MainWrapper>
+        <p className={Noto_Sans_KR_300.className}>
+          저는 웹 프론트엔드 개발을 좋아하며, 웹 어플리케이션 개발에 대한
+          열정으로 일하고 있습니다. <br></br> 혹시 저에 대해 궁금하시면 ⬇️
+          스크롤을 내려 확인해주세요.
+        </p>
+      </MainWrapper>
+    </Element>
   );
 };
 export default Main;

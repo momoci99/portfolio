@@ -2,8 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
-
-import Image from "next/image";
+import { Element } from "react-scroll";
 
 import {
   Noto_Sans_KR_700,
@@ -107,67 +106,76 @@ const ProjectsWrapper = styled.section`
 
 const Projects = () => {
   return (
-    <ProjectsWrapper>
-      <h2 className={Noto_Sans_KR_500.className}>
-        현실 세계의 문제를 해결하기 위한 <br></br>여러 프로젝트를 수행하였습니다
-      </h2>
-      <div className="project-panels-container">
-        <article className="project-panel">
-          <div className="contents-text">
-            <p className={Roboto_500.className + " project-type squars-blue"}>
-              WEB APPLICATION
-            </p>
+    <Element name="Projects">
+      <ProjectsWrapper>
+        <h2 className={Noto_Sans_KR_500.className}>
+          현실 세계의 문제를 해결하기 위한 <br></br>여러 프로젝트를
+          수행하였습니다
+        </h2>
+        <div className="project-panels-container">
+          <article className="project-panel">
+            <div className="contents-text">
+              <p className={Roboto_500.className + " project-type squars-blue"}>
+                WEB APPLICATION
+              </p>
 
-            <h3 className={Noto_Sans_KR_400.className + " project-title"}>
-              SQUARS
-            </h3>
-            <p className={Noto_Sans_KR_300.className + " project-description"}>
-              SQUARS는 WebAR의 모든 기능을 활용하고, 사용하기 쉽게 만들어주는 웹
-              기반 어플리케이션입니다. 누구나 쉽게 웹 기반 AR을 만들고, 공유할
-              수 있습니다. react, typescript, threejs를 활용하였습니다.
-            </p>
-            <a
-              href="https://squars.io/"
-              className="move-project squars-blue"
-              target="_blank"
-            >
-              프로젝트 보러가기
-            </a>
-          </div>
-          <div className="contents-image">
-            <img src="./squars_main.png" alt="squars_main"></img>
-          </div>
-        </article>
-        <article className="project-panel">
-          <div className="contents-image">
-            <img src="./remote_main.png" alt="squars_main"></img>
-          </div>
+              <h3 className={Noto_Sans_KR_400.className + " project-title"}>
+                SQUARS
+              </h3>
+              <p
+                className={Noto_Sans_KR_300.className + " project-description"}
+              >
+                SQUARS는 WebAR의 모든 기능을 활용하고, 사용하기 쉽게 만들어주는
+                웹 기반 어플리케이션입니다. 누구나 쉽게 웹 기반 AR을 만들고,
+                공유할 수 있습니다. react, typescript, threejs를 활용하였습니다.
+              </p>
+              <a
+                href="https://squars.io/"
+                className="move-project squars-blue"
+                target="_blank"
+              >
+                프로젝트 보러가기
+              </a>
+            </div>
+            <div className="contents-image">
+              <img src="./squars_main.png" alt="squars_main"></img>
+            </div>
+          </article>
+          <article className="project-panel">
+            <div className="contents-image">
+              <img src="./remote_main.png" alt="squars_main"></img>
+            </div>
 
-          <div className="contents-text">
-            <p className={Roboto_500.className + " project-type remote-green"}>
-              WEB APPLICATION
-            </p>
+            <div className="contents-text">
+              <p
+                className={Roboto_500.className + " project-type remote-green"}
+              >
+                WEB APPLICATION
+              </p>
 
-            <h3 className={Noto_Sans_KR_400.className + " project-title"}>
-              VIRNECT REMOTE
-            </h3>
-            <p className={Noto_Sans_KR_300.className + " project-description"}>
-              VIRNECT REMOTE는 실시간 영상과 AR로 원격에서 효율적인 지원, 감독
-              할 수 있는 솔루션이며 PC, mobile, tablet 등 다양한 디바이스에서
-              사용할 수 있습니다. vue, javascript, webrtc를 활용하였습니다.
-            </p>
+              <h3 className={Noto_Sans_KR_400.className + " project-title"}>
+                VIRNECT REMOTE
+              </h3>
+              <p
+                className={Noto_Sans_KR_300.className + " project-description"}
+              >
+                VIRNECT REMOTE는 실시간 영상과 AR로 원격에서 효율적인 지원, 감독
+                할 수 있는 솔루션이며 PC, mobile, tablet 등 다양한 디바이스에서
+                사용할 수 있습니다. vue, javascript, webrtc를 활용하였습니다.
+              </p>
 
-            <a
-              href="https://www.virnect.com/products/remote"
-              className="move-project remote-green"
-              target="_blank"
-            >
-              프로젝트 보러가기
-            </a>
-          </div>
-        </article>
-      </div>
-    </ProjectsWrapper>
+              <a
+                href="https://www.virnect.com/products/remote"
+                className="move-project remote-green"
+                target="_blank"
+              >
+                프로젝트 보러가기
+              </a>
+            </div>
+          </article>
+        </div>
+      </ProjectsWrapper>
+    </Element>
   );
 };
 

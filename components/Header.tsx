@@ -26,10 +26,10 @@ const Header = () => {
       <span className={Roboto_700.className + " logo"}>YKMO</span>
 
       <div className="gnb-group">
-        <HeaderButton text="Home"></HeaderButton>
-        <HeaderButton text="Skills"></HeaderButton>
-        <HeaderButton text="Projects"></HeaderButton>
-        <HeaderButton text="Blog"></HeaderButton>
+        <HeaderButton text="Home" to="Home" scrollOffset={-100}></HeaderButton>
+        <HeaderButton text="Skills" to="Skills"></HeaderButton>
+        <HeaderButton text="Projects" to="Projects"></HeaderButton>
+        <HeaderButton text="MyExperience" to="MyExperience"></HeaderButton>
       </div>
       <a href="mailto:momoci99@gmail.com">Contact me</a>
     </HeaderWrapper>

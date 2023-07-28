@@ -16,7 +16,7 @@ import {
 const ProjectsWrapper = styled.section`
   background-color: rgb(17, 17, 17);
 
-  height: 1000px;
+  height: 1300px;
 
   padding: 40px 60px;
 

@@ -8,6 +8,7 @@ import Projects from "@/components/Projects";
 import AboutMe from "@/components/AboutMe";
 
 import MyExperience from "@/components/MyExperience";
+import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
@@ -23,6 +24,7 @@ export default function Page() {
       <Projects></Projects>
       <AboutMe></AboutMe>
       <MyExperience></MyExperience>
+      <Footer></Footer>
     </div>
   );
 }

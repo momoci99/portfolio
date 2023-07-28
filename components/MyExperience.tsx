@@ -16,19 +16,19 @@ import {
 const MyExperienceWrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 20px;
-
-  h2 {
-    font-size: 38px;
-    padding-bottom: 18px;
-  }
+  gap: 60px;
 
   height: 500px;
 
   background-color: rgb(7, 7, 7);
   border-radius: 12px;
 
-  padding: 40px 30px 20px 30px;
+  padding: 40px 60px;
+
+  h2 {
+    font-size: 38px;
+    padding-bottom: 18px;
+  }
 
   h3 {
     font-size: 28px;

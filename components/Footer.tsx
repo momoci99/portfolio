@@ -15,7 +15,7 @@ const FooterWrapper = styled.main`
   flex-direction: column;
   justify-content: center;
 
-  margin: 20px 60px;
+  margin: 60px 60px;
 
   border-radius: 20px;
 

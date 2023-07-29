@@ -47,7 +47,6 @@ const SkillsPanelWrapper = styled.article`
   padding: 40px 30px 20px 30px;
 
   h3 {
-    font-size: 28px;
     padding-bottom: 10px;
   }
 

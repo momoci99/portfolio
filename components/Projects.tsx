@@ -5,27 +5,24 @@ import styled from "styled-components";
 import { Element } from "react-scroll";
 
 import {
-  Noto_Sans_KR_700,
   Noto_Sans_KR_300,
   Noto_Sans_KR_400,
   Noto_Sans_KR_500,
   Roboto_500,
 } from "@/app/fonts";
 
+import CommonButton from "@/components/CommonButton";
+
 const ProjectsWrapper = styled.section`
   background-color: rgb(17, 17, 17);
-
   height: 1300px;
-
   padding: 40px 60px;
 
   h2 {
-    font-size: 38px;
     padding-bottom: 50px;
   }
 
   h3 {
-    font-size: 28px;
     padding-bottom: 10px;
   }
 
@@ -37,11 +34,8 @@ const ProjectsWrapper = styled.section`
 
   .project-panel {
     background-color: rgb(7, 7, 7);
-
     display: flex;
-
     gap: 40px;
-
     padding: 40px 60px 40px 60px;
 
     border-radius: 24px;
@@ -88,20 +82,6 @@ const ProjectsWrapper = styled.section`
 
     padding-bottom: 40px;
   }
-
-  .move-project {
-    &.squars-blue {
-      background-color: rgb(0, 157, 255);
-      padding: 16px 32px;
-      border-radius: 8px;
-    }
-
-    &.remote-green {
-      background-color: rgb(25, 163, 115);
-      padding: 16px 32px;
-      border-radius: 8px;
-    }
-  }
 `;
 
 const Projects = () => {
@@ -129,13 +109,15 @@ const Projects = () => {
                 웹 기반 어플리케이션입니다. 누구나 쉽게 웹 기반 AR을 만들고,
                 공유할 수 있습니다. react, typescript, threejs를 활용하였습니다.
               </p>
-              <a
-                href="https://squars.io/"
-                className="move-project squars-blue"
-                target="_blank"
+              <CommonButton
+                color="white"
+                bgcolor="rgb(0, 157, 255)"
+                onClick={() => {
+                  window.open("https://squars.io/", "_blank");
+                }}
               >
                 프로젝트 보러가기
-              </a>
+              </CommonButton>
             </div>
             <div className="contents-image">
               <img src="./squars_main.png" alt="squars_main"></img>
@@ -164,13 +146,18 @@ const Projects = () => {
                 사용할 수 있습니다. vue, javascript, webrtc를 활용하였습니다.
               </p>
 
-              <a
-                href="https://www.virnect.com/products/remote"
-                className="move-project remote-green"
-                target="_blank"
+              <CommonButton
+                color="white"
+                bgcolor="rgb(25, 163, 115)"
+                onClick={() => {
+                  window.open(
+                    "https://www.virnect.com/products/remote",
+                    "_blank"
+                  );
+                }}
               >
                 프로젝트 보러가기
-              </a>
+              </CommonButton>
             </div>
           </article>
         </div>

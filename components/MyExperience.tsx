@@ -3,15 +3,9 @@ import styled from "styled-components";
 
 import { Element } from "react-scroll";
 
-import {
-  Noto_Sans_KR_700,
-  Noto_Sans_KR_300,
-  Noto_Sans_KR_400,
-  Noto_Sans_KR_500,
-  Roboto_500,
-  Roboto_400,
-  Roboto_300,
-} from "@/app/fonts";
+import { Noto_Sans_KR_300, Noto_Sans_KR_400, Roboto_400 } from "@/app/fonts";
+
+import CommonButton from "@/components/CommonButton";
 
 const MyExperienceWrapper = styled.section`
   display: grid;
@@ -26,21 +20,15 @@ const MyExperienceWrapper = styled.section`
   padding: 40px 60px;
 
   h2 {
-    font-size: 38px;
     padding-bottom: 18px;
   }
 
   h3 {
-    font-size: 28px;
     padding-bottom: 10px;
   }
 
-  h4 {
-    font-size: 28px;
-    padding-bottom: 10px;
-  }
-
-  p {
+  .my-experience-description {
+    padding-bottom: 26px;
     font-size: 18px;
   }
 
@@ -48,16 +36,6 @@ const MyExperienceWrapper = styled.section`
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-
-  .move-more-about-me {
-    margin-top: 26px;
-
-    background-color: rgb(255, 255, 255);
-    padding: 16px 32px;
-    border-radius: 8px;
-    color: rgb(0, 0, 0);
-    display: inline-block;
   }
 `;
 
@@ -76,7 +54,6 @@ const MyExperienceArticle = styled.article`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* height: 100%; */
 
     padding-top: 8px;
     .dot {
@@ -142,15 +119,21 @@ const MyExperience = () => {
       <MyExperienceWrapper>
         <div>
           <h2>지금까지의 경험들</h2>
-          <p>
+          <p className="my-experience-description">
             Web 브라우저의 확장성과 최신기술에 관심이 많습니다. 이를 위해
             플랫폼의 제한사항을 파악하고 대응할 수 있는 역량을 쌓고자 노력하고
             있습니다. 문제를 해결하기 위해 다양한 직무의 구성원과 커뮤니케이션을
             바탕으로 협업하고 있습니다.
           </p>
-          <a className={Roboto_400.className + " move-more-about-me"}>
+          <CommonButton
+            color="black"
+            bgcolor="rgb(255, 255, 255)"
+            onClick={() => {
+              alert("준비중입니다. 곧 업데이트 될 예정입니다. 🙇‍♂️");
+            }}
+          >
             이력서 다운로드
-          </a>
+          </CommonButton>
         </div>
         <div className="content">
           <MyExperienceContent

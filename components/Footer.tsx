@@ -1,6 +1,5 @@
 "use client";
 
-// welcome page say hello
 import React from "react";
 
 import {
@@ -18,10 +17,6 @@ const FooterWrapper = styled.main`
   margin: 60px 60px;
 
   border-radius: 20px;
-
-  h1 {
-    font-size: 48px;
-  }
 
   p {
     padding-top: 20px;

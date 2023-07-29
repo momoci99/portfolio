@@ -13,6 +13,8 @@ import {
   Roboto_300,
 } from "@/app/fonts";
 
+import CommonButton from "@/components/CommonButton";
+
 const AboutMeWrapper = styled.section`
   h2 {
     font-size: 38px;
@@ -72,21 +74,11 @@ const AboutMeWrapper = styled.section`
 
   .main {
     font-size: 18px;
-    line-height: 36px;
+    /* line-height: 36px; */
   }
 
   .sub {
     font-size: 18px;
-  }
-
-  .move-more-about-me {
-    margin-top: 26px;
-
-    background-color: rgb(255, 255, 255);
-    padding: 16px 32px;
-    border-radius: 8px;
-    color: rgb(0, 0, 0);
-    display: inline-block;
   }
 `;
 
@@ -122,10 +114,11 @@ const AboutMe = () => {
           웹 브라우저로 해낼 수 있는 여러가지 일들에 많은 관심을 가지고
           있습니다. 이를 통해 사용자의 문제를 해결하고 있습니다.
         </p>
+        <br></br>
 
-        <a className={Roboto_400.className + " move-more-about-me"}>
+        <CommonButton color="rgb(0, 0, 0)" bgcolor="rgb(255, 255, 255)">
           More About me
-        </a>
+        </CommonButton>
       </div>
     </AboutMeWrapper>
   );

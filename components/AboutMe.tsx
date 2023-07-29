@@ -3,15 +3,7 @@ import styled from "styled-components";
 
 import Image from "next/image";
 
-import {
-  Noto_Sans_KR_700,
-  Noto_Sans_KR_300,
-  Noto_Sans_KR_400,
-  Noto_Sans_KR_500,
-  Roboto_500,
-  Roboto_400,
-  Roboto_300,
-} from "@/app/fonts";
+import { Noto_Sans_KR_300, Roboto_400 } from "@/app/fonts";
 
 import CommonButton from "@/components/CommonButton";
 

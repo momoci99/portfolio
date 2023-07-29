@@ -1,6 +1,6 @@
 "use client";
 
-import { Roboto_400, Roboto_700 } from "@/app/fonts";
+import { Roboto_700 } from "@/app/fonts";
 import style from "styled-components";
 import HeaderButton from "./HeaderButton";
 

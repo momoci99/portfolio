@@ -3,7 +3,6 @@
 import React from "react";
 
 import {
-  Noto_Sans_KR_700,
   Noto_Sans_KR_300,
   Noto_Sans_KR_400,
   Noto_Sans_KR_500,
@@ -16,8 +15,6 @@ import Image from "next/image";
 
 const SkillsWrapper = styled.section`
   height: 1000px;
-  /* margin: 0 60px; */
-
   padding: 40px 60px;
 
   h2 {
@@ -34,8 +31,6 @@ const SkillsWrapper = styled.section`
   .skill-panels-container {
     display: grid;
     grid-template-rows: repeat(4, 0.3fr);
-    /* grid-column: auto; */
-
     grid-gap: 20px;
   }
 `;

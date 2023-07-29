@@ -1,6 +1,5 @@
 "use client";
 
-// welcome page say hello
 import React from "react";
 
 import {

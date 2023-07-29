@@ -5,7 +5,6 @@ import styled from "styled-components";
 import { Element } from "react-scroll";
 
 import {
-  Noto_Sans_KR_700,
   Noto_Sans_KR_300,
   Noto_Sans_KR_400,
   Noto_Sans_KR_500,
@@ -16,9 +15,7 @@ import CommonButton from "@/components/CommonButton";
 
 const ProjectsWrapper = styled.section`
   background-color: rgb(17, 17, 17);
-
   height: 1300px;
-
   padding: 40px 60px;
 
   h2 {
@@ -37,11 +34,8 @@ const ProjectsWrapper = styled.section`
 
   .project-panel {
     background-color: rgb(7, 7, 7);
-
     display: flex;
-
     gap: 40px;
-
     padding: 40px 60px 40px 60px;
 
     border-radius: 24px;

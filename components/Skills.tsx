@@ -21,7 +21,6 @@ const SkillsWrapper = styled.section`
   padding: 40px 60px;
 
   h2 {
-    font-size: 38px;
     padding-bottom: 20px;
   }
 

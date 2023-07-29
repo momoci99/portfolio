@@ -22,12 +22,10 @@ const ProjectsWrapper = styled.section`
   padding: 40px 60px;
 
   h2 {
-    font-size: 38px;
     padding-bottom: 50px;
   }
 
   h3 {
-    font-size: 28px;
     padding-bottom: 10px;
   }
 

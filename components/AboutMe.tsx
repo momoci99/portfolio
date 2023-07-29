@@ -17,8 +17,11 @@ import CommonButton from "@/components/CommonButton";
 
 const AboutMeWrapper = styled.section`
   h2 {
-    font-size: 38px;
     padding-bottom: 18px;
+  }
+
+  h3 {
+    padding-bottom: 10px;
   }
 
   height: 500px;
@@ -27,11 +30,6 @@ const AboutMeWrapper = styled.section`
   border-radius: 12px;
 
   padding: 40px 30px 20px 30px;
-
-  h3 {
-    font-size: 28px;
-    padding-bottom: 10px;
-  }
 
   p {
     font-size: 18px;

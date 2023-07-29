@@ -21,10 +21,6 @@ const MainWrapper = styled.main`
 
   border-radius: 20px;
 
-  h1 {
-    font-size: 48px;
-  }
-
   p {
     padding-top: 20px;
     font-size: 18px;

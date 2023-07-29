@@ -28,17 +28,10 @@ const MyExperienceWrapper = styled.section`
   padding: 40px 60px;
 
   h2 {
-    font-size: 38px;
     padding-bottom: 18px;
   }
 
   h3 {
-    font-size: 28px;
-    padding-bottom: 10px;
-  }
-
-  h4 {
-    font-size: 28px;
     padding-bottom: 10px;
   }
 

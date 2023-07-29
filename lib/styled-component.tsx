@@ -17,7 +17,10 @@ export function useStyledComponentsRegistry() {
   }: {
     children: React.ReactNode;
   }) => (
-    <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
+    <StyleSheetManager
+      sheet={styledComponentsStyleSheet.instance}
+      shouldForwardProp={() => true}
+    >
       {children as React.ReactElement}
     </StyleSheetManager>
   );

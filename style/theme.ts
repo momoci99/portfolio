@@ -1,6 +1,7 @@
 import { DefaultTheme } from "styled-components";
 
 const colors = {
+  pageBackground: "#FBFEFD",
   lightBlue: "#38BDF8",
   emerald: "#34D399",
   yellow: "#F59E0B",

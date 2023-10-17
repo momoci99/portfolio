@@ -1,12 +1,13 @@
-"use client";
 import StyledComponentsRegistry from "../lib/registry";
-import "./globals.css";
-import { Inter } from "next/font/google";
-import theme from "@/style/theme";
-import GlobalStyle from "@/style/GlobalStyle";
-import { ThemeProvider } from "styled-components";
+import type { Metadata } from "next";
+import Head from "next/head";
 
 import { NotoSansKr } from "./fonts";
+
+export const metadata: Metadata = {
+  title: "ykmo's portfolio",
+  description: "ykmo's portfolio",
+};
 
 export default function RootLayout({
   children,
@@ -15,12 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <StyledComponentsRegistry>
-        <GlobalStyle />
-        <ThemeProvider theme={theme}>
-          <body className={NotoSansKr.className}>{children}</body>
-        </ThemeProvider>
-      </StyledComponentsRegistry>
+      <body className={NotoSansKr.className}>{children}</body>
     </html>
   );
 }

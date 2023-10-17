@@ -7,7 +7,7 @@ const Wrapper = styled.div<{
   cardBackgroundColor?: string;
 }>`
   .title {
-    font-family: "Noto Sans KR";
+    font-family: Noto Sans KR, Arial, Helvetica, sans-serif;
 
     font-size: ${(props) => props.theme.desktopFontSizes.lg};
 
@@ -42,7 +42,7 @@ const Wrapper = styled.div<{
     padding-top: 20px;
     display: block;
 
-    font-family: "Noto Sans KR";
+    font-family: Noto Sans KR, Arial, Helvetica, sans-serif;
     font-size: ${(props) => props.theme.desktopFontSizes.xs};
     font-weight: ${(props) => props.theme.fontWeights.medium};
   }
@@ -74,7 +74,7 @@ const ProjectInfoContainer = (props: ProjectInfoContainerProps) => {
             size="default"
             name={skill.name}
             color={skill.color}
-            backgroundColor={skill.backgroundColor}
+            $backgroundColor={skill.backgroundColor}
           />
         ))}
       </div>

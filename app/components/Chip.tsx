@@ -5,14 +5,14 @@ import styled from "styled-components";
 const Wrapper = styled.div<{
   size?: "default" | "large";
   color?: string;
-  backgroundColor?: string;
+  $backgroundColor?: string;
 }>`
   background-color: ${(props) =>
-    props.backgroundColor || props.theme.colors.lightBlue};
+    props.$backgroundColor || props.theme.colors.lightBlue};
 
   color: ${(props) => props.color || props.theme.colors.white};
 
-  font-family: "Noto Sans KR";
+  font-family: Noto Sans KR, Arial, Helvetica, sans-serif;
 
   ${(props) => {
     switch (props.size) {
@@ -70,7 +70,7 @@ const Chip = (props: ChipProps) => {
     <Wrapper
       size={size}
       color={color}
-      backgroundColor={$backgroundColor}
+      $backgroundColor={$backgroundColor}
       className="chip"
       onClick={onClick}
     >

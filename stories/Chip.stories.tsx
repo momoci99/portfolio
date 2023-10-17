@@ -17,7 +17,7 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: "color" },
+    $backgroundColor: { control: "color" },
   },
   decorators: [
     (Story) => (
@@ -37,7 +37,7 @@ export const LightBlue: Story = {
     size: "default",
     name: "Chip",
     color: theme.colors.white,
-    backgroundColor: theme.colors.lightBlue,
+    $backgroundColor: theme.colors.lightBlue,
   },
 };
 
@@ -46,6 +46,6 @@ export const Rose: Story = {
     size: "large",
     name: "Chip",
     color: theme.colors.white,
-    backgroundColor: theme.colors.rose,
+    $backgroundColor: theme.colors.rose,
   },
 };

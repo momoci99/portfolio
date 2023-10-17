@@ -35,6 +35,10 @@ const Wrapper = styled.div<{
   }};
 
   border-radius: 32px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 interface ChipProps {
@@ -52,17 +56,23 @@ interface ChipProps {
   /**
    * Chip background color
    */
-  backgroundColor?: string;
+  $backgroundColor?: string;
+
+  /**
+   * Chip click event handler
+   */
+  onClick?: () => void;
 }
 
 const Chip = (props: ChipProps) => {
-  const { size, name, color, backgroundColor } = props;
+  const { size, name, color, $backgroundColor, onClick } = props;
   return (
     <Wrapper
       size={size}
       color={color}
-      backgroundColor={backgroundColor}
+      backgroundColor={$backgroundColor}
       className="chip"
+      onClick={onClick}
     >
       {name}
     </Wrapper>

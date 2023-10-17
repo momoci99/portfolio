@@ -3,8 +3,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div<{
-  size: "default" | "large";
-  color: string;
+  size?: "default" | "large";
+  color?: string;
   backgroundColor?: string;
 }>`
   background-color: ${(props) =>
@@ -26,6 +26,11 @@ const Wrapper = styled.div<{
           font-weight: ${props.theme.fontWeights.medium};
           padding : 8px 32px;
         `;
+      default:
+        return `
+          font-weight: ${props.theme.fontWeights.normal};
+          padding : 8px 16px;
+        `;
     }
   }};
 
@@ -33,7 +38,7 @@ const Wrapper = styled.div<{
 `;
 
 interface ChipProps {
-  size: "default" | "large";
+  size?: "default" | "large";
   /**
    * Chip name
    */
@@ -42,7 +47,7 @@ interface ChipProps {
   /**
    * Chip color
    */
-  color: string;
+  color?: string;
 
   /**
    * Chip background color

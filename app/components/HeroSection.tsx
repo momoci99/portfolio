@@ -94,7 +94,7 @@ const HeroSection = () => {
 
         <section>
           <p className="description">
-            저는 협업을 중요하게 여기고 <br /> 사용자에게 좋은 UX를 제공하기
+            저는 협업을 중요하게 여기고 <br /> 사용자에게 좋은 경험을 제공하기
             위해 노력합니다.
           </p>
         </section>

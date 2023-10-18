@@ -10,6 +10,8 @@ import { ThemeProvider } from "styled-components";
 
 import HeroSection from "@/app/components/HeroSection";
 
+import ProjectSection from "@/app/components/ProjectSection";
+
 const Wrapper = styled.div`
   height: 100vh;
   display: flex;
@@ -37,6 +39,7 @@ export default function Home() {
         <Wrapper className="page">
           <div className="inner-wrapper">
             <HeroSection />
+            <ProjectSection />
           </div>
         </Wrapper>
       </ThemeProvider>

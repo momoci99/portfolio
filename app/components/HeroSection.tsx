@@ -9,7 +9,24 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
 
-  background: ${(props) => props.theme.colors.gradient1};
+  background: ${(props) => props.theme.colors.gradientAnimation};
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  box-shadow: 0px 23px 30px 0px rgba(171, 236, 214, 0.2),
+    0px 4px 12px 0px rgba(0, 0, 0, 0.1);
   border-radius: 44px;
   padding: 38px 10%;
 

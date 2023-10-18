@@ -14,6 +14,8 @@ const colors = {
   gradient1: "linear-gradient(90deg, #FBED96 0%, #ABECD6 100%)",
   gradient2: "linear-gradient(90deg, #FFF278 0%, #F28D2F 100%)",
   gradient3: "linear-gradient(90deg, #40C4FF 0%, #189FFF 100%)",
+  gradientAnimation:
+    "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);",
 };
 
 const desktopFontSizes = {

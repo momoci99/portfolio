@@ -9,8 +9,8 @@ import GlobalStyle from "@/style/GlobalStyle";
 import { ThemeProvider } from "styled-components";
 
 import HeroSection from "@/app/components/HeroSection";
-
 import ProjectSection from "@/app/components/ProjectSection";
+import AboutMeSection from "@/app/components/AboutMeSection";
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -40,6 +40,7 @@ export default function Home() {
           <div className="inner-wrapper">
             <HeroSection />
             <ProjectSection />
+            <AboutMeSection />
           </div>
         </Wrapper>
       </ThemeProvider>

@@ -11,6 +11,8 @@ const Wrapper = styled.section`
     grid-row-gap: 0px;
     gap: 48px;
 
+    padding-bottom: 80px;
+
     @media screen and (max-width: 980px) {
       display: flex;
       flex-direction: column;

@@ -11,6 +11,7 @@ import { ThemeProvider } from "styled-components";
 import HeroSection from "@/app/components/HeroSection";
 import ProjectSection from "@/app/components/ProjectSection";
 import AboutMeSection from "@/app/components/AboutMeSection";
+import Footer from "@/app/components/Footer";
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -21,7 +22,7 @@ const Wrapper = styled.div`
   width: 100%;
 
   .inner-wrapper {
-    width: 80%;
+    width: 75%;
     height: 100%;
 
     @media screen and (max-width: 376px) {
@@ -41,6 +42,7 @@ export default function Home() {
             <HeroSection />
             <ProjectSection />
             <AboutMeSection />
+            <Footer />
           </div>
         </Wrapper>
       </ThemeProvider>

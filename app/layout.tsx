@@ -17,14 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script src="https://www.googletagmanager.com/gtag/js?id=MN4P7J6W" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=GTM-MN4P7J6W" />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'MN4P7J6W');
+          gtag('config', 'GTM-MN4P7J6W');
         `}
       </Script>
       <body className={NotoSansKr.className}>{children}</body>

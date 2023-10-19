@@ -1,50 +1,53 @@
 "use client";
 
-import Image from "next/image";
-import Header from "@/components/Header";
+import styled from "styled-components";
 
-import Main from "@/components/Main";
-import Skills from "@/components/Skills";
+import StyledComponentsRegistry from "../lib/registry";
+import type { Metadata } from "next";
+import theme from "@/style/theme";
+import GlobalStyle from "@/style/GlobalStyle";
+import { ThemeProvider } from "styled-components";
 
-import Projects from "@/components/Projects";
-import AboutMe from "@/components/AboutMe";
+import HeroSection from "@/app/components/HeroSection";
+import ProjectSection from "@/app/components/ProjectSection";
+import AboutMeSection from "@/app/components/AboutMeSection";
+import Footer from "@/app/components/Footer";
 
-import MyExperience from "@/components/MyExperience";
-import Footer from "@/components/Footer";
+const Wrapper = styled.div`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 
-import { createGlobalStyle } from "styled-components";
+  background-color: ${(props) => props.theme.colors.pageBackground};
+  width: 100%;
 
-const GlobalStyle = createGlobalStyle`
+  .inner-wrapper {
+    width: 75%;
+    height: 100%;
 
-  h1 {
-    font-size: 48px;
-  }
+    padding-top: 64px;
 
-  h2 {
-    font-size: 38px;
-  }
-
-  h3 {
-    font-size: 28px;    
+    @media screen and (max-width: 376px) {
+      padding: 20px;
+      width: 376px;
+    }
   }
 `;
 
-export default function Page() {
+export default function Home() {
   return (
-    <div
-      className=""
-      style={{
-        width: "100vw",
-      }}
-    >
-      <GlobalStyle></GlobalStyle>
-      <Header />
-      <Main></Main>
-      <Skills></Skills>
-      <Projects></Projects>
-      <AboutMe></AboutMe>
-      <MyExperience></MyExperience>
-      <Footer></Footer>
-    </div>
+    <StyledComponentsRegistry>
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <Wrapper className="page">
+          <div className="inner-wrapper">
+            <HeroSection />
+            <ProjectSection />
+            <AboutMeSection />
+            <Footer />
+          </div>
+        </Wrapper>
+      </ThemeProvider>
+    </StyledComponentsRegistry>
   );
 }

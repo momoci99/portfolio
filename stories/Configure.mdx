@@ -1,0 +1,179 @@
+import { Meta } from "@storybook/blocks";
+
+{/* http://localhost:6006/?path=/docs/design-system--docs */}
+
+<Meta title="Design System" />
+
+<div className="wrapper">
+  <h1>Design System</h1>
+  
+  <h2>Introduction</h2>
+  
+    포트폴리오에 사용된 컬러와 폰트를 정의한 문서입니다.
+    디자인 소스 : [링크](https://www.figma.com/community/file/1126581136185110141)
+
+<h2>Main Colors</h2>
+<section className="grid-container">
+  <div className="color-container">
+    <div className="color emerald"></div>
+    <p>#34D399</p>
+    <p>Extended/emerald/400</p>
+  </div>
+
+{" "}
+
+<div className="color-container">
+  <div className="color light-blue"></div>
+  <p>#38BDF8</p>
+  <p>Extended/light-blue/400</p>
+</div>
+
+{" "}
+
+<div className="color-container">
+  <div className="color yellow"></div>
+  <p>#F59E0B</p>
+  <p>Default/yellow/500</p>
+</div>
+
+{" "}
+
+<div className="color-container">
+  <div className="color rose"></div>
+  <p>#F43F5E</p>
+  <p>Extended/rose/500</p>
+</div>
+
+</section>
+
+<h2>Base Colors</h2>
+<section className="grid-container">
+  <div className="color-container">
+    <div className="color black-900"></div>
+    <p>#111827</p>
+    <p>black-900</p>
+  </div>
+
+    <div className="color-container">
+    <div className="color white"></div>
+    <p>#FFFFFF</p>
+    <p>Default/white (background)</p>
+
+  </div>
+
+</section>
+
+<section className="grid-container">
+  <div className="color-container">
+    <div className="color grey-900"></div>
+    <p>#E1E1E6</p>
+    <p>grey-900 (on bg)</p>
+  </div>
+
+<div className="color-container">
+  <div className="color grey-600"></div>
+  <p>#C4C4CC</p>
+  <p>Default/white (background)</p>
+</div>
+
+<div className="color-container">
+  <div className="color grey-700"></div>
+  <p>#8D8D99</p>
+  <p>Default/white (background)</p>
+</div>
+
+</section>
+
+<h2>Gradients</h2>
+<section className="grid-container">
+<div className="color-container">
+  <div className="color gradient-1"></div>
+  <p>#FBED96 #ABECD6</p>
+  <p>100% 100%</p>
+</div>
+
+<div className="color-container">
+  <div className="color gradient-2"></div>
+  <p>#FFF278 #F28D2F</p>
+  <p>100% 100%</p>
+</div>
+
+<div className="color-container">
+  <div className="color gradient-3"></div>
+  <p>#40C4FF #189FFF</p>
+  <p>100% 100%</p>
+</div>
+</section>
+
+</div>
+
+<style>
+  {`
+
+
+.wrapper{
+  background-color: #F9FAFB;
+  width: 100%;
+  height: 100%;
+}
+
+  .grid-container{
+    display: flex;
+    gap: 10px;
+  }
+
+  .color {
+    padding:20px;
+    width: 180px;
+  }
+
+.emerald { 
+  background-color: #34D399;
+}
+
+.light-blue {
+  background-color: #38BDF8;
+}
+
+.yellow {
+  background-color: #F59E0B;
+}
+
+.rose {
+  background-color: #F43F5E;
+}
+
+.black-900 {
+  background-color: #111827;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.grey-900{
+  background-color: #E1E1E6;
+}
+
+.grey-600{
+  background-color: #C4C4CC;
+}
+
+.grey-700{
+  background-color: #8D8D99;
+}
+
+.gradient-1{
+  background: linear-gradient(90deg, #FBED96 0%, #ABECD6 100%);
+}
+
+.gradient-2{
+  background: linear-gradient(90deg, #FFF278 0%, #F28D2F 100%);
+}
+
+.gradient-3{
+  background: linear-gradient(90deg, #40C4FF 0%, #189FFF 100%);
+}
+
+`}
+</style>

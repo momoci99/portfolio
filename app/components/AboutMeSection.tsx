@@ -20,6 +20,7 @@ const Wrapper = styled.section`
   }
 
   .section-header {
+    padding-bottom: 40px;
     font-size: ${(props) => props.theme.desktopFontSizes.title};
     font-family: Noto Sans KR, Arial, Helvetica, sans-serif;
     font-weight: ${(props) => props.theme.fontWeights.medium};

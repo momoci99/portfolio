@@ -37,7 +37,7 @@ const projects = [
   {
     title: "SQUARS",
     subTitle: "Web AR Platform",
-    cardImage: "/squars_main.png",
+    cardImage: "/squars_main.jpg",
     cardBackgroundColor: "rgb(0, 157, 255)",
     skills: [
       {
@@ -61,7 +61,7 @@ const projects = [
   {
     title: "Remote",
     subTitle: "Web Conference Service",
-    cardImage: "/remote_main.png",
+    cardImage: "/remote_main.jpg",
     cardBackgroundColor: "rgb(25, 163, 115)",
     skills: [
       {
@@ -85,7 +85,7 @@ const projects = [
   {
     title: "CMIS",
     subTitle: "Web Application",
-    cardImage: "/nse_main.png",
+    cardImage: "/nse_main.jpg",
     cardBackgroundColor: "rgb(211, 226, 235)",
     skills: [
       {

@@ -3,19 +3,29 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div<{
-  size?: "default" | "large";
+  size?: "small" | "default" | "large";
   color?: string;
   $backgroundColor?: string;
+  borderColor?: string;
 }>`
-  background-color: ${(props) =>
-    props.$backgroundColor || props.theme.colors.lightBlue};
+  background-color: ${(props) => props.$backgroundColor || "transparent"};
 
-  color: ${(props) => props.color || props.theme.colors.white};
+  ${(props) => {
+    if (props.borderColor) return `border: 1px solid ${props.borderColor};`;
+  }};
+
+  color: ${(props) => props.color || "transparent"};
 
   font-family: Noto Sans KR, Arial, Helvetica, sans-serif;
 
   ${(props) => {
     switch (props.size) {
+      case "small":
+        return `
+        padding : 4px 8px;
+          font-size: ${props.theme.desktopFontSizes.xxs};
+        `;
+
       case "default":
         return `
           font-weight: ${props.theme.fontWeights.normal};
@@ -42,7 +52,7 @@ const Wrapper = styled.div<{
 `;
 
 interface ChipProps {
-  size?: "default" | "large";
+  size?: "small" | "default" | "large";
   /**
    * Chip name
    */
@@ -59,19 +69,25 @@ interface ChipProps {
   $backgroundColor?: string;
 
   /**
+   * Chip border color
+   */
+  borderColor?: string;
+
+  /**
    * Chip click event handler
    */
   onClick?: () => void;
 }
 
 const Chip = (props: ChipProps) => {
-  const { size, name, color, $backgroundColor, onClick } = props;
+  const { size, name, color, $backgroundColor, borderColor, onClick } = props;
   return (
     <Wrapper
       size={size}
       color={color}
       $backgroundColor={$backgroundColor}
       className="chip"
+      borderColor={borderColor}
       onClick={onClick}
     >
       {name}
